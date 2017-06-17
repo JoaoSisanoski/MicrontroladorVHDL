@@ -1,0 +1,265 @@
+{{C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/RAM.vhd}} {0 {vcom -work work -2002 -explicit {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/RAM.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 16:03:49 on Jun 17,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/RAM.vhd 
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcom9g099i".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/RAM.vhd(1): VHDL Compiler exiting
+End time: 16:03:49 on Jun 17,2017, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {10.0 11.0} {}} {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomz8kb8e".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd(1): VHDL Compiler exiting
+
+} {8.0 9.0} {}} {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uprocessor_tb.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uprocessor_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcom2k8tdd".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uprocessor_tb.vhd(1): VHDL Compiler exiting
+
+} {8.0 9.0} {}} {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/IR.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/IR.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcom19z5qa".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/IR.vhd(1): VHDL Compiler exiting
+
+} {8.0 9.0} {}} {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Acumulator.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Acumulator.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomzcfvmm".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Acumulator.vhd(1): VHDL Compiler exiting
+
+} {8.0 9.0} {}} {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcom43vtri".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd(1): VHDL Compiler exiting
+
+} {8.0 9.0} {}} {{C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd}} {0 {vcom -work work -2002 -explicit {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 16:03:49 on Jun 17,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd 
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcom7ae4v0".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd(1): VHDL Compiler exiting
+End time: 16:03:49 on Jun 17,2017, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {10.0 11.0} {}} {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ROM.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ROM.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomiy1xsn".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ROM.vhd(1): VHDL Compiler exiting
+
+} {8.0 9.0} {}} {{C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Decoder.vhd}} {0 {vcom -work work -2002 -explicit {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Decoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 16:03:49 on Jun 17,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Decoder.vhd 
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomyshn54".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Decoder.vhd(1): VHDL Compiler exiting
+End time: 16:03:49 on Jun 17,2017, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {10.0 11.0} {}} {{C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd}} {0 {vcom -work work -2002 -explicit {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 16:03:49 on Jun 17,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd 
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomdzsrkh".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd(1): VHDL Compiler exiting
+End time: 16:03:49 on Jun 17,2017, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {10.0 11.0} {}} {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FA.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FA.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcombjq9t5".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FA.vhd(1): VHDL Compiler exiting
+
+} {8.0 9.0} {}} {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/RAM.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/RAM.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomvdbn8w".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/RAM.vhd(1): VHDL Compiler exiting
+
+} {8.0 9.0} {}} {{C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uprocessor_tb.vhd}} {0 {vcom -work work -2002 -explicit {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uprocessor_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 16:03:48 on Jun 17,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uprocessor_tb.vhd 
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomf3q3ff".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uprocessor_tb.vhd(1): VHDL Compiler exiting
+End time: 16:03:48 on Jun 17,2017, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {10.0 11.0} {}} {{C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd}} {0 {vcom -work work -2002 -explicit {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 16:03:49 on Jun 17,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd 
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcome0cxag".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd(1): VHDL Compiler exiting
+End time: 16:03:49 on Jun 17,2017, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {10.0 11.0} {}} {{C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/IR.vhd}} {0 {vcom -work work -2002 -explicit {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/IR.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 16:03:49 on Jun 17,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/IR.vhd 
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomt01n1m".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/IR.vhd(1): VHDL Compiler exiting
+End time: 16:03:49 on Jun 17,2017, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {10.0 11.0} {}} {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomw1v1m3".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd(1): VHDL Compiler exiting
+
+} {8.0 9.0} {}} {{C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd}} {0 {vcom -work work -2002 -explicit {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 16:03:48 on Jun 17,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd 
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomgysrwt".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd(1): VHDL Compiler exiting
+End time: 16:03:48 on Jun 17,2017, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {10.0 11.0} {}} {{C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Acumulator.vhd}} {0 {vcom -work work -2002 -explicit {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Acumulator.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 16:03:48 on Jun 17,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Acumulator.vhd 
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomw0fnmg".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Acumulator.vhd(1): VHDL Compiler exiting
+End time: 16:03:48 on Jun 17,2017, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {10.0 11.0} {}} {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcom3gat0n".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd(1): VHDL Compiler exiting
+
+} {8.0 9.0} {}} {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Decoder.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Decoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomgnsx16".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Decoder.vhd(1): VHDL Compiler exiting
+
+} {8.0 9.0} {}} {{C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ROM.vhd}} {0 {vcom -work work -2002 -explicit {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ROM.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 16:03:49 on Jun 17,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ROM.vhd 
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcom9t0k3g".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ROM.vhd(1): VHDL Compiler exiting
+End time: 16:03:49 on Jun 17,2017, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {10.0 11.0} {}} {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Program_Counter.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Program_Counter.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomzbmmvk".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Program_Counter.vhd(1): VHDL Compiler exiting
+
+} {8.0 9.0} {}} {{C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FA.vhd}} {0 {vcom -work work -2002 -explicit {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FA.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 16:03:49 on Jun 17,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FA.vhd 
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomifdqah".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FA.vhd(1): VHDL Compiler exiting
+End time: 16:03:49 on Jun 17,2017, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {10.0 11.0} {}} {{C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Program_Counter.vhd}} {0 {vcom -work work -2002 -explicit {C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Program_Counter.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 16:03:49 on Jun 17,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Program_Counter.vhd 
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_lib.qdb): unable to open database file
+mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/work/_temp/vcomgdf3qw".
+The system cannot find the path specified. (GetLastError() = 3)
+** Error: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Program_Counter.vhd(1): VHDL Compiler exiting
+End time: 16:03:49 on Jun 17,2017, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {10.0 11.0} {}}

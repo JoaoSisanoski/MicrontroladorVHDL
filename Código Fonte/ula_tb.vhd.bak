@@ -31,13 +31,13 @@ BEGIN
       value2   => value2   ) ; 
       
       value1 <= x"00",
-                x"02" after 100 ns,
-                x"03" after 200 ns,
+                x"2" after 100 ns,
+                x"3" after 200 ns,
                 x"05" after 300 ns;
                 
       value2 <= x"FF",
-                x"02" after 100 ns,
-                x"03" after 200 ns,
+                x"2" after 100 ns,
+                x"3" after 200 ns,
                 x"10" after 300 ns;
                   
       control <= "11" after 100 ns,

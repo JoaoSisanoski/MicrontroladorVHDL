@@ -1,6 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
 
 -- Descri��o do M�dulo Principal
 
@@ -37,6 +38,8 @@ signal SUM_AUX, CARRY_AUX: std_logic_vector(7 downto 0);
 
 signal SUB_AUX, CARRYS_AUX: std_logic_vector(7 downto 0);
 
+signal  MUL_AUX: std_logic_vector(15 downto 0);
+
 component FA 
 	port 
 	   (
@@ -56,15 +59,14 @@ begin
 	FA6: FA port map (VALUE2(5), VALUE1(5), CARRY_AUX(4), SUM_AUX(5), CARRY_AUX(5));
 	FA7: FA port map (VALUE2(6), VALUE1(6), CARRY_AUX(5), SUM_AUX(6), CARRY_AUX(6));
 	FA8: FA port map (VALUE2(7), VALUE1(7), CARRY_AUX(6), SUM_AUX(7), CARRY_AUX(7));
-	
-	FS1: FA port map (VALUE2(0), not VALUE1(0), '0'          , SUB_AUX(0), CARRYS_AUX(0));
-	FS2: FA port map (VALUE2(1), not VALUE1(1), CARRYS_AUX(0), SUB_AUX(1), CARRYS_AUX(1));
-	FS3: FA port map (VALUE2(2), not VALUE1(2), CARRYS_AUX(1), SUB_AUX(2), CARRYS_AUX(2));
-	FS4: FA port map (VALUE2(3), not VALUE1(3), CARRYS_AUX(2), SUB_AUX(3), CARRYS_AUX(3));
-	FS5: FA port map (VALUE2(4), not VALUE1(4), CARRYS_AUX(3), SUB_AUX(4), CARRYS_AUX(4));
-	FS6: FA port map (VALUE2(5), not VALUE1(5), CARRYS_AUX(4), SUB_AUX(5), CARRYS_AUX(5));
-	FS7: FA port map (VALUE2(6), not VALUE1(6), CARRYS_AUX(5), SUB_AUX(6), CARRYS_AUX(6));
-	FS8: FA port map (VALUE2(7), not VALUE1(7), CARRYS_AUX(6), SUB_AUX(7), CARRYS_AUX(7));
+	FS1: FA port map (VALUE2(0), "not"(VALUE1(0)), '1'          , SUB_AUX(0), CARRYS_AUX(0));
+	FS2: FA port map (VALUE2(1), "not"(VALUE1(1)), CARRYS_AUX(0), SUB_AUX(1), CARRYS_AUX(1));
+	FS3: FA port map (VALUE2(2), "not"(VALUE1(2)), CARRYS_AUX(1), SUB_AUX(2), CARRYS_AUX(2));
+	FS4: FA port map (VALUE2(3), "not"(VALUE1(3)), CARRYS_AUX(2), SUB_AUX(3), CARRYS_AUX(3));
+	FS5: FA port map (VALUE2(4), "not"(VALUE1(4)), CARRYS_AUX(3), SUB_AUX(4), CARRYS_AUX(4));
+	FS6: FA port map (VALUE2(5), "not"(VALUE1(5)), CARRYS_AUX(4), SUB_AUX(5), CARRYS_AUX(5));
+	FS7: FA port map (VALUE2(6), "not"(VALUE1(6)), CARRYS_AUX(5), SUB_AUX(6), CARRYS_AUX(6));
+	FS8: FA port map (VALUE2(7), "not"(VALUE1(7)), CARRYS_AUX(6), SUB_AUX(7), CARRYS_AUX(7));
 
         
         process (CONTROL, VALUE1, VALUE2)  
@@ -76,13 +78,14 @@ begin
 						  elsif(CONTROL = "10") then -- Opera��o de sub
                        RESULT <= SUB_AUX;
                     elsif(CONTROL = "11") then -- Opera�ao mul
-                        RESULT <= VALUE1 and VALUE2;
+							  MUL_AUX <= std_logic_vector(unsigned(VALUE2) * unsigned(VALUE1));
+							  RESULT <= MUL_AUX(7 downto 0);
                    end if;
         end process;
         
         process (VALUE1, VALUE2, CONTROL)
             begin
-                    if(CONTROL = "00") then
+                    if(CONTROL = "00" ) or (CONTROL = "10") then
                         FLAG_NEG <= SUM_AUX(7);
                     else
                         FLAG_NEG <= '0';

@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
--- Entradas e saï¿½das da ROM
+-- Entradas e saídas da ROM
 
 entity ROM is
     port
@@ -19,8 +19,8 @@ architecture behavior of ROM is
   
      signal MEMPROGRAM: vector_data_program := 
      (
-		0  => x"0004",
-		1  => x"0703",
+		0  => x"0002",
+		1  => x"0203",
 		2  => x"0506",
 		3  => x"0100",
 		4  => x"0408",

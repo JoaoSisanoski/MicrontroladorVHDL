@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Microcontrolador
-Sat Jun 17 15:34:46 2017
+Sat Jun 17 16:50:49 2017
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -18,18 +18,12 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
  10. Removed Registers Triggering Further Register Optimizations
  11. General Register Statistics
  12. Port Connectivity Checks: "ULA:ALU|FA:FS8"
- 13. Port Connectivity Checks: "ULA:ALU|FA:FS7"
- 14. Port Connectivity Checks: "ULA:ALU|FA:FS6"
- 15. Port Connectivity Checks: "ULA:ALU|FA:FS5"
- 16. Port Connectivity Checks: "ULA:ALU|FA:FS4"
- 17. Port Connectivity Checks: "ULA:ALU|FA:FS3"
- 18. Port Connectivity Checks: "ULA:ALU|FA:FS2"
- 19. Port Connectivity Checks: "ULA:ALU|FA:FS1"
- 20. Port Connectivity Checks: "ULA:ALU|FA:FA8"
- 21. Port Connectivity Checks: "ULA:ALU|FA:FA1"
- 22. Post-Synthesis Netlist Statistics for Top Partition
- 23. Elapsed Time Per Partition
- 24. Analysis & Synthesis Messages
+ 13. Port Connectivity Checks: "ULA:ALU|FA:FS1"
+ 14. Port Connectivity Checks: "ULA:ALU|FA:FA8"
+ 15. Port Connectivity Checks: "ULA:ALU|FA:FA1"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -56,7 +50,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jun 17 15:34:46 2017       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jun 17 16:50:49 2017       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; Microcontrolador                            ;
 ; Top-level Entity Name              ; Microcontrolador                            ;
@@ -340,73 +334,17 @@ Encoding Type:  One-Hot
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port  ; Type   ; Severity ; Details                                                                             ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
-; soma  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; carry ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ULA:ALU|FA:FS7"                                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; soma ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ULA:ALU|FA:FS6"                                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; soma ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ULA:ALU|FA:FS5"                                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; soma ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ULA:ALU|FA:FS4"                                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; soma ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ULA:ALU|FA:FS3"                                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; soma ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ULA:ALU|FA:FS2"                                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; soma ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ULA:ALU|FA:FS1"                                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; c    ; Input  ; Info     ; Stuck at GND                                                                        ;
-; soma ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------+
+; Port Connectivity Checks: "ULA:ALU|FA:FS1" ;
++------+-------+----------+------------------+
+; Port ; Type  ; Severity ; Details          ;
++------+-------+----------+------------------+
+; c    ; Input ; Info     ; Stuck at VCC     ;
++------+-------+----------+------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------+
@@ -454,7 +392,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Sat Jun 17 15:34:25 2017
+    Info: Processing started: Sat Jun 17 16:50:31 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Microcontrolador -c Microcontrolador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -462,8 +400,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file uproces
     Info (12022): Found design unit 1: Microcontrolador-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 20
     Info (12023): Found entity 1: Microcontrolador File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ULA-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 34
-    Info (12023): Found entity 1: ULA File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 21
+    Info (12022): Found design unit 1: ULA-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 35
+    Info (12023): Found entity 1: ULA File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 22
 Info (12021): Found 2 design units, including 1 entities, in source file rom.vhd
     Info (12022): Found design unit 1: ROM-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ROM.vhd Line: 16
     Info (12023): Found entity 1: ROM File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ROM.vhd Line: 7
@@ -493,20 +431,19 @@ Info (12021): Found 2 design units, including 1 entities, in source file acumula
     Info (12023): Found entity 1: Accumulator File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Acumulator.vhd Line: 7
 Info (12127): Elaborating entity "Microcontrolador" for the top level hierarchy
 Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ALU" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 220
-Warning (10036): Verilog HDL or VHDL warning at ula.vhd(38): object "SUB_AUX" assigned a value but never read File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 38
-Warning (10492): VHDL Process Statement warning at ula.vhd(73): signal "SUM_AUX" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 73
-Warning (10492): VHDL Process Statement warning at ula.vhd(77): signal "SUM_AUX" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 77
-Warning (10631): VHDL Process Statement warning at ula.vhd(70): inferring latch(es) for signal or variable "RESULT", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
-Warning (10492): VHDL Process Statement warning at ula.vhd(86): signal "SUM_AUX" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 86
-Info (10041): Inferred latch for "RESULT[0]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
-Info (10041): Inferred latch for "RESULT[1]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
-Info (10041): Inferred latch for "RESULT[2]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
-Info (10041): Inferred latch for "RESULT[3]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
-Info (10041): Inferred latch for "RESULT[4]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
-Info (10041): Inferred latch for "RESULT[5]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
-Info (10041): Inferred latch for "RESULT[6]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
-Info (10041): Inferred latch for "RESULT[7]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
-Info (12128): Elaborating entity "FA" for hierarchy "ULA:ALU|FA:FA1" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 51
+Warning (10492): VHDL Process Statement warning at ula.vhd(74): signal "SUM_AUX" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at ula.vhd(78): signal "SUB_AUX" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 78
+Warning (10631): VHDL Process Statement warning at ula.vhd(71): inferring latch(es) for signal or variable "RESULT", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 71
+Warning (10492): VHDL Process Statement warning at ula.vhd(87): signal "SUM_AUX" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 87
+Info (10041): Inferred latch for "RESULT[0]" at ula.vhd(71) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 71
+Info (10041): Inferred latch for "RESULT[1]" at ula.vhd(71) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 71
+Info (10041): Inferred latch for "RESULT[2]" at ula.vhd(71) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 71
+Info (10041): Inferred latch for "RESULT[3]" at ula.vhd(71) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 71
+Info (10041): Inferred latch for "RESULT[4]" at ula.vhd(71) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 71
+Info (10041): Inferred latch for "RESULT[5]" at ula.vhd(71) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 71
+Info (10041): Inferred latch for "RESULT[6]" at ula.vhd(71) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 71
+Info (10041): Inferred latch for "RESULT[7]" at ula.vhd(71) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 71
+Info (12128): Elaborating entity "FA" for hierarchy "ULA:ALU|FA:FA1" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 53
 Info (12128): Elaborating entity "ROM" for hierarchy "ROM:MPROGRAMA" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 221
 Info (12128): Elaborating entity "RAM" for hierarchy "RAM:MDADOS" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 222
 Info (12128): Elaborating entity "Program_Counter" for hierarchy "Program_Counter:PC" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 223
@@ -585,10 +522,10 @@ Warning (21074): Design contains 2 input pin(s) that do not drive logic
 Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
     Info: Peak virtual memory: 847 megabytes
-    Info: Processing ended: Sat Jun 17 15:34:46 2017
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:45
+    Info: Processing ended: Sat Jun 17 16:50:49 2017
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:38
 
 
