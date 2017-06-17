@@ -1,0 +1,594 @@
+Analysis & Synthesis report for Microcontrolador
+Sat Jun 17 15:34:46 2017
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Microcontrolador|FSM:ME|EA
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Port Connectivity Checks: "ULA:ALU|FA:FS8"
+ 13. Port Connectivity Checks: "ULA:ALU|FA:FS7"
+ 14. Port Connectivity Checks: "ULA:ALU|FA:FS6"
+ 15. Port Connectivity Checks: "ULA:ALU|FA:FS5"
+ 16. Port Connectivity Checks: "ULA:ALU|FA:FS4"
+ 17. Port Connectivity Checks: "ULA:ALU|FA:FS3"
+ 18. Port Connectivity Checks: "ULA:ALU|FA:FS2"
+ 19. Port Connectivity Checks: "ULA:ALU|FA:FS1"
+ 20. Port Connectivity Checks: "ULA:ALU|FA:FA8"
+ 21. Port Connectivity Checks: "ULA:ALU|FA:FA1"
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Jun 17 15:34:46 2017       ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                      ; Microcontrolador                            ;
+; Top-level Entity Name              ; Microcontrolador                            ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 2                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; Microcontrolador   ; Microcontrolador   ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
+; uProcessor.vhd                   ; yes             ; User VHDL File  ; C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd      ;         ;
+; ula.vhd                          ; yes             ; User VHDL File  ; C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd             ;         ;
+; ROM.vhd                          ; yes             ; User VHDL File  ; C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ROM.vhd             ;         ;
+; RAM.vhd                          ; yes             ; User VHDL File  ; C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/RAM.vhd             ;         ;
+; Program_Counter.vhd              ; yes             ; User VHDL File  ; C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Program_Counter.vhd ;         ;
+; mux2x1.vhd                       ; yes             ; User VHDL File  ; C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd          ;         ;
+; IR.vhd                           ; yes             ; User VHDL File  ; C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/IR.vhd              ;         ;
+; FSM.vhd                          ; yes             ; User VHDL File  ; C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd             ;         ;
+; FA.vhd                           ; yes             ; User VHDL File  ; C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FA.vhd              ;         ;
+; Decoder.vhd                      ; yes             ; User VHDL File  ; C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Decoder.vhd         ;         ;
+; Acumulator.vhd                   ; yes             ; User VHDL File  ; C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Acumulator.vhd      ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; CLOCK ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                            ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name      ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
+; |Microcontrolador          ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |Microcontrolador   ; Microcontrolador ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Microcontrolador|FSM:ME|EA                                                                                         ;
++-----------+----------+-----------+---------+-------+---------+-------+-------+----------+-----------+---------+----------+----------+
+; Name      ; EA.BREAK ; EA.RESULT ; EA.JMPR ; EA.RW ; EA.COND ; EA.OP ; EA.ID ; EA.DECOD ; EA.LOADIR ; EA.CACC ; EA.SINST ; EA.START ;
++-----------+----------+-----------+---------+-------+---------+-------+-------+----------+-----------+---------+----------+----------+
+; EA.START  ; 0        ; 0         ; 0       ; 0     ; 0       ; 0     ; 0     ; 0        ; 0         ; 0       ; 0        ; 0        ;
+; EA.SINST  ; 0        ; 0         ; 0       ; 0     ; 0       ; 0     ; 0     ; 0        ; 0         ; 0       ; 1        ; 1        ;
+; EA.CACC   ; 0        ; 0         ; 0       ; 0     ; 0       ; 0     ; 0     ; 0        ; 0         ; 1       ; 0        ; 1        ;
+; EA.LOADIR ; 0        ; 0         ; 0       ; 0     ; 0       ; 0     ; 0     ; 0        ; 1         ; 0       ; 0        ; 1        ;
+; EA.DECOD  ; 0        ; 0         ; 0       ; 0     ; 0       ; 0     ; 0     ; 1        ; 0         ; 0       ; 0        ; 1        ;
+; EA.ID     ; 0        ; 0         ; 0       ; 0     ; 0       ; 0     ; 1     ; 0        ; 0         ; 0       ; 0        ; 1        ;
+; EA.OP     ; 0        ; 0         ; 0       ; 0     ; 0       ; 1     ; 0     ; 0        ; 0         ; 0       ; 0        ; 1        ;
+; EA.COND   ; 0        ; 0         ; 0       ; 0     ; 1       ; 0     ; 0     ; 0        ; 0         ; 0       ; 0        ; 1        ;
+; EA.RW     ; 0        ; 0         ; 0       ; 1     ; 0       ; 0     ; 0     ; 0        ; 0         ; 0       ; 0        ; 1        ;
+; EA.JMPR   ; 0        ; 0         ; 1       ; 0     ; 0       ; 0     ; 0     ; 0        ; 0         ; 0       ; 0        ; 1        ;
+; EA.RESULT ; 0        ; 1         ; 0       ; 0     ; 0       ; 0     ; 0     ; 0        ; 0         ; 0       ; 0        ; 1        ;
+; EA.BREAK  ; 1        ; 0         ; 0       ; 0     ; 0       ; 0     ; 0     ; 0        ; 0         ; 0       ; 0        ; 1        ;
++-----------+----------+-----------+---------+-------+---------+-------+-------+----------+-----------+---------+----------+----------+
+
+
++--------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                   ;
++---------------------------------------------+----------------------------------------+
+; Register name                               ; Reason for Removal                     ;
++---------------------------------------------+----------------------------------------+
+; ROM:MPROGRAMA|DATA_signal[4..7]             ; Stuck at GND due to stuck port data_in ;
+; Instruction_Register:IR|PINSTRUCTION[4..7]  ; Stuck at GND due to stuck port data_in ;
+; Decoder:DECOD|ADDRESS[4..7]                 ; Stuck at GND due to stuck port data_in ;
+; Decoder:DECOD|COMMAND_OUT[0..3]             ; Lost fanout                            ;
+; Instruction_Register:IR|PINSTRUCTION[8..15] ; Lost fanout                            ;
+; ROM:MPROGRAMA|DATA_signal[8..15]            ; Lost fanout                            ;
+; Program_Counter:PC|POS_AUX[0..7]            ; Lost fanout                            ;
+; Decoder:DECOD|ADDRESS[0..3]                 ; Lost fanout                            ;
+; Instruction_Register:IR|PINSTRUCTION[0..3]  ; Lost fanout                            ;
+; ROM:MPROGRAMA|DATA_signal[0..3]             ; Lost fanout                            ;
+; FSM:ME|EA.START                             ; Lost fanout                            ;
+; FSM:ME|EA.SINST                             ; Lost fanout                            ;
+; FSM:ME|EA.CACC                              ; Lost fanout                            ;
+; FSM:ME|EA.LOADIR                            ; Lost fanout                            ;
+; FSM:ME|EA.DECOD                             ; Lost fanout                            ;
+; FSM:ME|EA.ID                                ; Lost fanout                            ;
+; FSM:ME|EA.OP                                ; Lost fanout                            ;
+; FSM:ME|EA.COND                              ; Lost fanout                            ;
+; FSM:ME|EA.RW                                ; Lost fanout                            ;
+; FSM:ME|EA.JMPR                              ; Lost fanout                            ;
+; FSM:ME|EA.RESULT                            ; Lost fanout                            ;
+; FSM:ME|EA.BREAK                             ; Lost fanout                            ;
+; Total Number of Removed Registers = 64      ;                                        ;
++---------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                ;
++------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                            ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Decoder:DECOD|COMMAND_OUT[0]             ; Lost Fanouts              ; Instruction_Register:IR|PINSTRUCTION[15], Instruction_Register:IR|PINSTRUCTION[14], ;
+;                                          ;                           ; Instruction_Register:IR|PINSTRUCTION[13], Instruction_Register:IR|PINSTRUCTION[12], ;
+;                                          ;                           ; Instruction_Register:IR|PINSTRUCTION[11], Instruction_Register:IR|PINSTRUCTION[8],  ;
+;                                          ;                           ; ROM:MPROGRAMA|DATA_signal[15], ROM:MPROGRAMA|DATA_signal[14],                       ;
+;                                          ;                           ; ROM:MPROGRAMA|DATA_signal[13], ROM:MPROGRAMA|DATA_signal[12],                       ;
+;                                          ;                           ; ROM:MPROGRAMA|DATA_signal[11], ROM:MPROGRAMA|DATA_signal[8],                        ;
+;                                          ;                           ; Program_Counter:PC|POS_AUX[3], Program_Counter:PC|POS_AUX[2],                       ;
+;                                          ;                           ; Program_Counter:PC|POS_AUX[1], Program_Counter:PC|POS_AUX[0],                       ;
+;                                          ;                           ; Decoder:DECOD|ADDRESS[3], Decoder:DECOD|ADDRESS[2], Decoder:DECOD|ADDRESS[1],       ;
+;                                          ;                           ; Decoder:DECOD|ADDRESS[0], Instruction_Register:IR|PINSTRUCTION[3],                  ;
+;                                          ;                           ; Instruction_Register:IR|PINSTRUCTION[2], Instruction_Register:IR|PINSTRUCTION[1],   ;
+;                                          ;                           ; Instruction_Register:IR|PINSTRUCTION[0], ROM:MPROGRAMA|DATA_signal[3],              ;
+;                                          ;                           ; ROM:MPROGRAMA|DATA_signal[2], ROM:MPROGRAMA|DATA_signal[1],                         ;
+;                                          ;                           ; ROM:MPROGRAMA|DATA_signal[0], FSM:ME|EA.LOADIR, FSM:ME|EA.JMPR                      ;
+; ROM:MPROGRAMA|DATA_signal[7]             ; Stuck at GND              ; Instruction_Register:IR|PINSTRUCTION[7], Decoder:DECOD|ADDRESS[7],                  ;
+;                                          ; due to stuck port data_in ; Decoder:DECOD|COMMAND_OUT[3], FSM:ME|EA.START, FSM:ME|EA.SINST, FSM:ME|EA.DECOD,    ;
+;                                          ;                           ; FSM:ME|EA.ID                                                                        ;
+; ROM:MPROGRAMA|DATA_signal[6]             ; Stuck at GND              ; Instruction_Register:IR|PINSTRUCTION[6], Decoder:DECOD|ADDRESS[6]                   ;
+;                                          ; due to stuck port data_in ;                                                                                     ;
+; ROM:MPROGRAMA|DATA_signal[5]             ; Stuck at GND              ; Instruction_Register:IR|PINSTRUCTION[5], Decoder:DECOD|ADDRESS[5]                   ;
+;                                          ; due to stuck port data_in ;                                                                                     ;
+; ROM:MPROGRAMA|DATA_signal[4]             ; Stuck at GND              ; Instruction_Register:IR|PINSTRUCTION[4], Decoder:DECOD|ADDRESS[4]                   ;
+;                                          ; due to stuck port data_in ;                                                                                     ;
+; Instruction_Register:IR|PINSTRUCTION[10] ; Lost Fanouts              ; ROM:MPROGRAMA|DATA_signal[10]                                                       ;
+; Instruction_Register:IR|PINSTRUCTION[9]  ; Lost Fanouts              ; ROM:MPROGRAMA|DATA_signal[9]                                                        ;
++------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ALU|FA:FS8"                                                                      ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; soma  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; carry ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ALU|FA:FS7"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; soma ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ALU|FA:FS6"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; soma ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ALU|FA:FS5"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; soma ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ALU|FA:FS4"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; soma ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ALU|FA:FS3"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; soma ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ALU|FA:FS2"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; soma ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ALU|FA:FS1"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; c    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; soma ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ALU|FA:FA8"                                                                      ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; carry ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "ULA:ALU|FA:FA1" ;
++------+-------+----------+------------------+
+; Port ; Type  ; Severity ; Details          ;
++------+-------+----------+------------------+
+; c    ; Input ; Info     ; Stuck at GND     ;
++------+-------+----------+------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 2                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Sat Jun 17 15:34:25 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Microcontrolador -c Microcontrolador
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file uprocessor.vhd
+    Info (12022): Found design unit 1: Microcontrolador-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 20
+    Info (12023): Found entity 1: Microcontrolador File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
+    Info (12022): Found design unit 1: ULA-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 34
+    Info (12023): Found entity 1: ULA File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file rom.vhd
+    Info (12022): Found design unit 1: ROM-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ROM.vhd Line: 16
+    Info (12023): Found entity 1: ROM File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ROM.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file ram.vhd
+    Info (12022): Found design unit 1: RAM-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/RAM.vhd Line: 19
+    Info (12023): Found entity 1: RAM File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/RAM.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file program_counter.vhd
+    Info (12022): Found design unit 1: Program_Counter-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Program_Counter.vhd Line: 21
+    Info (12023): Found entity 1: Program_Counter File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Program_Counter.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file mux2x1.vhd
+    Info (12022): Found design unit 1: mux2x1-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd Line: 19
+    Info (12023): Found entity 1: mux2x1 File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file ir.vhd
+    Info (12022): Found design unit 1: Instruction_Register-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/IR.vhd Line: 20
+    Info (12023): Found entity 1: Instruction_Register File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/IR.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file fsm.vhd
+    Info (12022): Found design unit 1: FSM-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 33
+    Info (12023): Found entity 1: FSM File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file fa.vhd
+    Info (12022): Found design unit 1: FA-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FA.vhd Line: 17
+    Info (12023): Found entity 1: FA File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FA.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhd
+    Info (12022): Found design unit 1: Decoder-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Decoder.vhd Line: 23
+    Info (12023): Found entity 1: Decoder File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Decoder.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file acumulator.vhd
+    Info (12022): Found design unit 1: Accumulator-behavior File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Acumulator.vhd Line: 18
+    Info (12023): Found entity 1: Accumulator File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/Acumulator.vhd Line: 7
+Info (12127): Elaborating entity "Microcontrolador" for the top level hierarchy
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ALU" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 220
+Warning (10036): Verilog HDL or VHDL warning at ula.vhd(38): object "SUB_AUX" assigned a value but never read File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 38
+Warning (10492): VHDL Process Statement warning at ula.vhd(73): signal "SUM_AUX" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 73
+Warning (10492): VHDL Process Statement warning at ula.vhd(77): signal "SUM_AUX" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 77
+Warning (10631): VHDL Process Statement warning at ula.vhd(70): inferring latch(es) for signal or variable "RESULT", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
+Warning (10492): VHDL Process Statement warning at ula.vhd(86): signal "SUM_AUX" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 86
+Info (10041): Inferred latch for "RESULT[0]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
+Info (10041): Inferred latch for "RESULT[1]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
+Info (10041): Inferred latch for "RESULT[2]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
+Info (10041): Inferred latch for "RESULT[3]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
+Info (10041): Inferred latch for "RESULT[4]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
+Info (10041): Inferred latch for "RESULT[5]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
+Info (10041): Inferred latch for "RESULT[6]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
+Info (10041): Inferred latch for "RESULT[7]" at ula.vhd(70) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 70
+Info (12128): Elaborating entity "FA" for hierarchy "ULA:ALU|FA:FA1" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ula.vhd Line: 51
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:MPROGRAMA" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 221
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:MDADOS" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 222
+Info (12128): Elaborating entity "Program_Counter" for hierarchy "Program_Counter:PC" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 223
+Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:MUX" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 224
+Warning (10631): VHDL Process Statement warning at mux2x1.vhd(21): inferring latch(es) for signal or variable "Q", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd Line: 21
+Info (10041): Inferred latch for "Q[0]" at mux2x1.vhd(21) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd Line: 21
+Info (10041): Inferred latch for "Q[1]" at mux2x1.vhd(21) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd Line: 21
+Info (10041): Inferred latch for "Q[2]" at mux2x1.vhd(21) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd Line: 21
+Info (10041): Inferred latch for "Q[3]" at mux2x1.vhd(21) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd Line: 21
+Info (10041): Inferred latch for "Q[4]" at mux2x1.vhd(21) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd Line: 21
+Info (10041): Inferred latch for "Q[5]" at mux2x1.vhd(21) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd Line: 21
+Info (10041): Inferred latch for "Q[6]" at mux2x1.vhd(21) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd Line: 21
+Info (10041): Inferred latch for "Q[7]" at mux2x1.vhd(21) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/mux2x1.vhd Line: 21
+Info (12128): Elaborating entity "Instruction_Register" for hierarchy "Instruction_Register:IR" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 225
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:DECOD" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 226
+Info (12128): Elaborating entity "Accumulator" for hierarchy "Accumulator:ACC" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 227
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM:ME" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 228
+Warning (10492): VHDL Process Statement warning at FSM.vhd(69): signal "LOAD_PCAUX" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 69
+Warning (10492): VHDL Process Statement warning at FSM.vhd(89): signal "COMMAND" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 89
+Warning (10492): VHDL Process Statement warning at FSM.vhd(104): signal "COMMAND" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 104
+Warning (10492): VHDL Process Statement warning at FSM.vhd(110): signal "COMMAND" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 110
+Warning (10492): VHDL Process Statement warning at FSM.vhd(130): signal "COMMAND" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 130
+Warning (10492): VHDL Process Statement warning at FSM.vhd(132): signal "COMMAND" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 132
+Warning (10492): VHDL Process Statement warning at FSM.vhd(134): signal "COMMAND" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 134
+Warning (10492): VHDL Process Statement warning at FSM.vhd(136): signal "COMMAND" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 136
+Warning (10492): VHDL Process Statement warning at FSM.vhd(145): signal "COMMAND" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 145
+Warning (10492): VHDL Process Statement warning at FSM.vhd(145): signal "FLAG_NEG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 145
+Warning (10492): VHDL Process Statement warning at FSM.vhd(145): signal "FLAG_ZERO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 145
+Warning (10492): VHDL Process Statement warning at FSM.vhd(160): signal "RESET" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 160
+Warning (10631): VHDL Process Statement warning at FSM.vhd(51): inferring latch(es) for signal or variable "LOAD_ACC", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at FSM.vhd(51): inferring latch(es) for signal or variable "LOAD_PCAUX", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at FSM.vhd(51): inferring latch(es) for signal or variable "LOAD_PC", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at FSM.vhd(51): inferring latch(es) for signal or variable "LOAD_IR", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at FSM.vhd(51): inferring latch(es) for signal or variable "LOAD_ROM", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at FSM.vhd(51): inferring latch(es) for signal or variable "LOAD_DECOD", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at FSM.vhd(51): inferring latch(es) for signal or variable "RST_ALL", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at FSM.vhd(51): inferring latch(es) for signal or variable "PE", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at FSM.vhd(51): inferring latch(es) for signal or variable "LOAD_RAM", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at FSM.vhd(51): inferring latch(es) for signal or variable "CONTROL_JMP", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at FSM.vhd(51): inferring latch(es) for signal or variable "CONTROL_RAM", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at FSM.vhd(51): inferring latch(es) for signal or variable "CONTROL_ACC", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at FSM.vhd(51): inferring latch(es) for signal or variable "CONTROL_ULA", which holds its previous value in one or more paths through the process File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "CONTROL_ULA[0]" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "CONTROL_ULA[1]" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "CONTROL_ACC" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "CONTROL_RAM" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "CONTROL_JMP" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "LOAD_RAM" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "PE.BREAK" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "PE.RESULT" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "PE.JMPR" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "PE.RW" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "PE.COND" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "PE.OP" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "PE.ID" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "PE.DECOD" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "PE.LOADIR" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "PE.CACC" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "PE.SINST" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "PE.START" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "RST_ALL" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "LOAD_DECOD" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "LOAD_ROM" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "LOAD_IR" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "LOAD_PC" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "LOAD_PCAUX" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (10041): Inferred latch for "LOAD_ACC" at FSM.vhd(51) File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/FSM.vhd Line: 51
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "ROM:MPROGRAMA|MEMPROGRAM" is uninferred due to inappropriate RAM size File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/ROM.vhd Line: 20
+Info (17049): 52 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 12
+    Warning (15610): No output dependent on input pin "RESET" File: C:/Users/IBM_ADMIN/Desktop/MicrontroladorVHDL/Código Fonte/uProcessor.vhd Line: 13
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
+    Info: Peak virtual memory: 847 megabytes
+    Info: Processing ended: Sat Jun 17 15:34:46 2017
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:45
+
+

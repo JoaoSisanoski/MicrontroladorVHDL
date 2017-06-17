@@ -2,9 +2,9 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
--- Descriï¿½ï¿½o do Mï¿½dulo Principal
+-- Descrição do Módulo Principal
 
--- Entradas e saï¿½das da Mï¿½quina de Estados
+-- Entradas e saídas da Máquina de Estados
 
 entity FSM is
     port
@@ -20,7 +20,7 @@ entity FSM is
              LOAD_DECOD : out std_logic;
              LOAD_RAM   : out std_logic;
              LOAD_ROM   : out std_logic;
-             CONTROL_ULA: out std_logic_vector(1 downto 0);
+             CONTROL_ULA: out std_logic;
              CONTROL_JMP: out std_logic;
              CONTROL_RAM: out std_logic;
              CONTROL_ACC: out std_logic;
@@ -46,7 +46,7 @@ architecture behavior of FSM is
 		end if;
    end process;
 
--- AQUI SERï¿½ DESCRITO O COMPORTAMENTO EM CADA ESTADO E SUAS INTERVENï¿½ï¿½ES
+-- AQUI SERÁ DESCRITO O COMPORTAMENTO EM CADA ESTADO E SUAS INTERVENÇÕES
 
    process(CLOCK, EA)
 	 begin
@@ -128,14 +128,10 @@ architecture behavior of FSM is
         
                        
         when RESULT  =>    if(COMMAND = x"3") then
-                               CONTROL_ULA <= "00"; -- OP ADD
+                               CONTROL_ULA <= '0'; -- OP ADD
                            elsif(COMMAND = x"4") then
-                               CONTROL_ULA <= "01"; -- OP AND
-									elsif(COMMAND = x"8") then
-                               CONTROL_ULA <= "10"; -- OP SUB
-                           elsif(COMMAND = x"7") then
-                               CONTROL_ULA <= "11"; -- OP MUL
-									end if;
+                               CONTROL_ULA <= '1'; -- OP AND
+                           end if;
                            
                               CONTROL_ACC <= '1';
                               PE <= CACC;

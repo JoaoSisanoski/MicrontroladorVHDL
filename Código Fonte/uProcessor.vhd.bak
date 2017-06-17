@@ -2,74 +2,74 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
--- Descriï¿½ï¿½o do Mï¿½dulo Principal
+-- Descrição do Módulo Principal
 
--- Entradas e saï¿½das do Microprocessador
+-- Entradas e saídas do Microprocessador
 
-entity Microcontrolador is
+entity uProcessor is
     port
           (
               CLOCK: in  std_logic;
               RESET: in  std_logic
            
            );
-end Microcontrolador;
+end uProcessor;
 
--- Descriï¿½ï¿½o do comportamento do mï¿½dulo principal
+-- Descrição do comportamento do módulo principal
 
-architecture behavior of Microcontrolador is
+architecture behavior of uProcessor is
     
-    -- Saï¿½das da FSM
+    -- Saídas da FSM
     
 	 signal   SLOAD_ACC, 
 	          SLOAD_PC, 
 	          SLOAD_IR,
 	          SLOAD_DECOD, 
 	          SLOAD_RAM, 
-	          SLOAD_ROM, 
+	          SLOAD_ROM,
+	          SCONTROL_ULA, 
 	          SCONTROL_JMP, 
 	          SCONTROL_RAM, 
 	          SCONTROL_ACC,
 	          SRST_ALL: std_logic;
-	signal   SCONTROL_ULA: std_logic_vector(1 downto 0);
-
-	 -- Saï¿½das da ULA
+	          
+	 -- Saídas da ULA
 	 
 	 signal   SFLAG_ZERO,
 	          SFLAG_NEG: std_logic;
 	 signal   SRESULT: std_logic_vector(7 downto 0);
 	 
-	 -- Saï¿½das da ROM
+	 -- Saídas da ROM
 	 
 	 signal   SDATA: std_logic_vector(15 downto 0);
 	 
-	 -- Saï¿½das da RAM
+	 -- Saídas da RAM
 	 
 	 signal   SDATA_OUT: std_logic_vector(7 downto 0);
 	 
-	 -- Saï¿½das do Program Counter
+	 -- Saídas do Program Counter
 	 
 	 signal   SPOS: std_logic_vector(7 downto 0);
 	 
-	 -- Saï¿½das do Mux 2x1
+	 -- Saídas do Mux 2x1
 	 
 	 signal   SQ: std_logic_vector(7 downto 0);
 	 
-	 -- Saï¿½das do Instruction Register
+	 -- Saídas do Instruction Register
 	 
 	 signal   SPINSTRUCTION: std_logic_vector(15 downto 0);
 	 
-	 -- Saï¿½das do Decoder
+	 -- Saídas do Decoder
 	 
 	 signal   SCOMMAND_OUT: std_logic_vector(3 downto 0);
 	 signal   SADDRESS: std_logic_vector(7 downto 0);
 	 
-	 -- Saï¿½das do Acumulator
+	 -- Saídas do Acumulator
 	 
 	 signal SVALUE_OUT: std_logic_vector(7 downto 0);
 	 
 
--- Descriï¿½ï¿½o dos componentes utilizados no mï¿½dulo principal
+-- Descrição dos componentes utilizados no módulo principal
 
 -- Instruction Register
 
@@ -78,8 +78,8 @@ component Instruction_Register is
         (
            LOAD: in std_logic; -- Load vindo da FSM
            RESET: in std_logic; -- Reset
-           PINSTRUCTION: out std_logic_vector(15 downto 0); -- Instruï¿½ao em uso
-           NINSTRUCTION: in std_logic_vector(15 downto 0) -- Proxima instruï¿½ao
+           PINSTRUCTION: out std_logic_vector(15 downto 0); -- Instruçao em uso
+           NINSTRUCTION: in std_logic_vector(15 downto 0) -- Proxima instruçao
            
          );
          
@@ -92,7 +92,7 @@ component ULA is
         (
              VALUE1    : in  std_logic_vector(7 downto 0);
              VALUE2    : in  std_logic_vector(7 downto 0);
-             CONTROL   : in  std_logic_vector(1 downto 0);
+             CONTROL   : in  std_logic;
              FLAG_ZERO : out std_logic;
              FLAG_NEG  : out std_logic;
              RESULT    : out std_logic_vector(7 downto 0)
@@ -120,7 +120,7 @@ component mux2x1 is
     port
         (
            D1 : in std_logic_vector(7 downto 0); -- Entrada 1, vindo da ULA
-           D2 : in std_logic_vector(7 downto 0); -- Entrada 2, vindo da memï¿½ria
+           D2 : in std_logic_vector(7 downto 0); -- Entrada 2, vindo da memória
            CONTROLE: in std_logic; -- 00 LDA 01 STA 10 ULA
            Q   : out std_logic_vector(7 downto 0)
         
@@ -136,8 +136,8 @@ component Program_Counter is
            CLOCK: in std_logic; -- Load vindo da FSM
            CONTROL_JMP: in std_logic; -- Load para o JMP
            RESET: in std_logic; -- Reset
-           JMP  : in std_logic_vector(7 downto 0); -- Endereï¿½o de memoria vindo da instruï¿½ao JMP
-           POS  : out std_logic_vector(7 downto 0) -- Posiï¿½ao de memoria
+           JMP  : in std_logic_vector(7 downto 0); -- Endereço de memoria vindo da instruçao JMP
+           POS  : out std_logic_vector(7 downto 0) -- Posiçao de memoria
            
          );
          
@@ -157,7 +157,7 @@ component Decoder is
          );
 end component;
 
--- Memï¿½ria do programa
+-- Memória do programa
 
 component ROM is
     port
@@ -169,7 +169,7 @@ component ROM is
         
 end component;
 
--- Memï¿½ria RAM
+-- Memória RAM
 
 component RAM is
     port
@@ -200,8 +200,7 @@ component FSM is
              LOAD_DECOD : out std_logic;
              LOAD_RAM   : out std_logic;
              LOAD_ROM   : out std_logic;
-				 CONTROL_ULA    : out  std_logic_vector(1 downto 0);
-
+             CONTROL_ULA: out std_logic;
              CONTROL_JMP: out std_logic;
              CONTROL_RAM: out std_logic;
              CONTROL_ACC: out std_logic;
@@ -211,7 +210,7 @@ component FSM is
         
 end component;
 
--- Comportamento do mï¿½dulo principal
+-- Comportamento do módulo principal
 
 begin
     

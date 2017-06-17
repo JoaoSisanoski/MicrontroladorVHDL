@@ -3,9 +3,9 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.std_logic_arith.all;
 
--- Descriï¿½ï¿½o do Mï¿½dulo Principal
+-- Descrição do Módulo Principal
 
--- Entradas e saï¿½das do Decoder
+-- Entradas e saídas do Decoder
 
 entity Decoder is
     port
@@ -41,9 +41,6 @@ begin
 	         when x"04" => COMMAND_OUT <= x"5"; -- JMP
 	         when x"05" => COMMAND_OUT <= x"6"; -- BRN
 	         when x"06" => COMMAND_OUT <= x"7"; -- BRZ
-				when x"07" => COMMAND_OUT <= x"8"; -- SUB
-				when x"08" => COMMAND_OUT <= x"9"; -- MUL
-
 	         when x"FF" => COMMAND_OUT <= x"F"; -- HALT
 	         when others  => COMMAND_OUT <= x"F";
        end case;
